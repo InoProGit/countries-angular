@@ -9,6 +9,8 @@ import { CountryPageComponent } from './pages/country-page/country-page.componen
 import { HeaderComponent } from './modules/global/header/header.component';
 import { FooterComponent } from './modules/global/footer/footer.component';
 
+import { FilterService } from './services/filter-service/filter.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { FooterComponent } from './modules/global/footer/footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    FilterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
