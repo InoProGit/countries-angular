@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "http://localhost:7474/db/data",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
