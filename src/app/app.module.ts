@@ -39,8 +39,9 @@ import {InMemoryCache} from '@apollo/client/core';
           method: 'POST',
           cache: new InMemoryCache(),
           link: httpLink.create({
-            uri: 'http://localhost:7474/db/neo4j/tx', // Neo4j local
-            headers: new HttpHeaders().set('Authorization', 'Basic bmVvNGo6Z3JhcGhSb290'), // set autorization, `Basic ${btoa('neo4j:graphRoot')}`
+            // uri: 'http://localhost:7474/db/neo4j/tx', // Neo4j local
+            // headers: new HttpHeaders().set('Authorization', 'Basic bmVvNGo6Z3JhcGhSb290'), // set autorization, `Basic ${btoa('neo4j:graphRoot')}`
+            uri: 'http://localhost:4000/', // Neo4j local
           }),
         };
       },
